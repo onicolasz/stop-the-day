@@ -140,7 +140,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(1, 40, 112);
+  color: var(--primary);
   height: 100%;
   user-select: none;
   position: relative;
@@ -154,7 +154,7 @@ export default {
 
 .mode-title {
   margin: 40px;
-  text-shadow: 2px 2px 2px #4a99ff;
+  text-shadow: 2px 2px 2px var(--secondary);
   animation: float 3s ease-in-out infinite;
 
   h1 {
@@ -179,30 +179,30 @@ export default {
   }
 
   button {
-    color: rgb(1, 40, 112);
+    color: var(--primary);
     padding: 12px 20px;
-    border: 2px solid rgb(1, 40, 112);
+    border: 2px solid var(--primary);
     border-radius: 10px;
     margin: 25px;
     font-size: 14px;
-    box-shadow: 2px 2px 8px black;
-    background-color: white;
-    text-shadow: 2px 2px 2px #4a99ff;
+    box-shadow: 2px 2px 8px var(--black);
+    background-color: var(--white);
+    text-shadow: 2px 2px 2px var(--secondary);
     transition: all 0.2s ease;
     cursor: pointer;
 
     &:not(:disabled) {
       &:hover {
         transform: translateY(-5px);
-        background-color: rgb(1, 40, 112);
-        color: white;
-        text-shadow: 2px 3px 2px #4a99ff;
+        background-color: var(--primary);
+        color: var(--white);
+        text-shadow: 2px 3px 2px var(--secondary);
       }
 
       &:active {
         transform: translateY(0px);
-        text-shadow: 2px 2px 2px #4a99ff;
-        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 2px var(--secondary);
+        box-shadow: 0 2px 7px var(--black);
       }
     }
 

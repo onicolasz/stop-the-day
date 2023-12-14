@@ -141,7 +141,7 @@ export default {
 }
 
 .letter {
-  color: rgb(1, 40, 112);
+  color: var(--primary);
   margin: 10px;
 }
 </style>

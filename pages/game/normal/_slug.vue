@@ -105,7 +105,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
   margin-inline: 20px;
@@ -129,7 +129,7 @@ export default {
 }
 
 .letter {
-  color: rgb(1, 40, 112);
+  color: var(--primary);
   margin: 10px;
 }
 </style>
