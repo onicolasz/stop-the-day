@@ -1,6 +1,11 @@
 <template>
   <div class="app">
-    <Header />
+    <Header
+      v-if="
+        this.$route?.name !== 'login' &&
+        this.$route?.name !== 'login-forgot-password'
+      "
+    />
     <main>
       <nuxt />
     </main>

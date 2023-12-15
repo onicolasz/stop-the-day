@@ -10,6 +10,7 @@
         '--delay': letter.animationDelay + 's',
         '--translateX': letter.translateX,
         '--translateY': letter.translateY,
+        color: `var(--${color})`,
       }"
     >
       {{ letter.value }}
@@ -19,6 +20,11 @@
 
 <script>
 export default {
+  props: {
+    color: {
+      default: "--black",
+    },
+  },
   data() {
     return {
       randomLetters: [],
