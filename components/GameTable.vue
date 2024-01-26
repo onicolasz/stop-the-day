@@ -7,7 +7,7 @@
       </div>
       <input type="text" v-model="answers[column.id]" />
     </div>
-    <button class="btn-finish" @click="finishGame">Finalizar</button>
+    <button class="btn-styled" @click="finishGame">Finalizar</button>
   </div>
 </template>
 

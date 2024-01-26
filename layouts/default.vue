@@ -21,6 +21,16 @@ export default {
     Header,
     Footer,
   },
+  data() {
+    return {
+      logged: true,
+    };
+  },
+  created() {
+    if (!this.logged) {
+      this.$router.push("/login");
+    }
+  },
 };
 </script>
 
