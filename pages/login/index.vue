@@ -8,7 +8,7 @@
       <div class="input-container">
         <div class="input-field">
           <input v-model="email" type="text" required spellcheck="false" />
-          <label>Email</label>
+          <label>Emaill</label>
         </div>
         <div class="input-field">
           <input
