@@ -6,9 +6,9 @@
         <h2>Stop the day</h2>
       </div>
       <div class="fields-container">
-        <TextInput v-model="email" type="email" placeholder="Email"></TextInput>
+        <TextInput :value="email" type="email" placeholder="Email"></TextInput>
         <TextInput
-          v-model="password"
+          :value="password"
           type="password"
           placeholder="Senha"
         ></TextInput>

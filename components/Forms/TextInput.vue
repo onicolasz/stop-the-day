@@ -1,6 +1,6 @@
 <template>
   <div class="text-input">
-    <input v-model="text" :type="type" spellcheck="false" />
+    <input :type="type" :value="value" @input="onInput" />
     <label>{{ placeholder }}</label>
   </div>
 </template>
@@ -9,16 +9,28 @@
 export default {
   name: "TextInput",
   props: {
-    type: String,
-    placeholder: String,
+    type: {
+      type: String,
+      required: true,
+    },
+    placeholder: {
+      type: String,
+      required: true,
+    },
+    value: {
+      type: String,
+      required: true,
+    },
   },
   date() {
     return {
-      text: null,
       showPassword: false,
     };
   },
   methods: {
+    onInput(event) {
+      this.$emit("input", event.target.value);
+    },
     viewPassword() {
       this.showPassword = !this.showPassword;
     },
